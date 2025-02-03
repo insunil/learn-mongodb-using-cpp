@@ -1,11 +1,12 @@
 #include <iostream>
+#include<string>
 
 #include <bsoncxx/json.hpp>
-#include <bsoncxx/oid.hpp>
 #include <mongocxx/client.hpp>
+#include <bsoncxx/oid.hpp>
 #include <mongocxx/instance.hpp>
 #include <mongocxx/uri.hpp>
-#include <bsoncxx/json.hpp>
+
 #include <bsoncxx/builder/stream/document.hpp>
 
 using namespace mongocxx;
@@ -55,7 +56,7 @@ public:
 
 int main()
 {
-  MongoDBHandler handler("cpp", "data");
+  MongoDBHandler handler("product", "productdetails");
 
   while (1)
   {
@@ -80,6 +81,7 @@ int main()
 
     default:
       cout << "Invalid option" << endl;
+      cout << "Please choose a valid option" << endl;
       break;
     }
   }
