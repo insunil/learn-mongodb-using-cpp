@@ -1,12 +1,13 @@
 #include <iostream>
 #include<string>
+#include <cstdlib>
 
 #include <bsoncxx/json.hpp>
 #include <mongocxx/client.hpp>
 #include <bsoncxx/oid.hpp>
 #include <mongocxx/instance.hpp>
 #include <mongocxx/uri.hpp>
-
+#include <cstdlib>
 #include <bsoncxx/builder/stream/document.hpp>
 
 using namespace mongocxx;
@@ -17,7 +18,7 @@ class MongoDBHandler
 {
 private:
   instance instance;
-  uri uri{"mongodb://localhost:27017"}; // uri uri("mongodb://localhost:27017") is not allowed in class
+  uri uri{getenv("connectionstring")}; // uri uri("mongodb://localhost:27017") is not allowed in class
   client client{uri};
   database db;
   collection coll;
