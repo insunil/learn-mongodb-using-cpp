@@ -42,7 +42,7 @@ public:
              << "city" << city;
 
     coll.insert_one(document.view());
-    cout << "Document inserted!" << std::endl;
+    cout << "Document inserted! 1" << std::endl;
   };
   void query_collection()
   {
@@ -63,7 +63,7 @@ int main()
   {
     int option;
     cout << "please choose an option" << endl;
-    cout << "1. Insert a document" << endl;
+    cout << "1. Insert a document " << endl;
     cout << "2. Query the collection" << endl;
     cout << "3. Exit" << endl;
     cin >> option;

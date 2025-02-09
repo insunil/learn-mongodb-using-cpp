@@ -43,7 +43,7 @@ printf("enter the number\n");
      n=n/10;
  }
 
-  if(sum==temp)
+  
  if(sum==temp)
   {
       printf("armstrong number\n");
