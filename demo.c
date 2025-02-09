@@ -9,8 +9,10 @@ Code, Compile, Run and Debug online from anywhere in world.
 #include <stdio.h>
 
 int main()
-{
-
+{   // single comment  command +/
+   /* multi line comment
+     shift + option + A
+   */
  int count=0,power,i,r,sum=0,n,temp;
 printf("enter the number\n");
  scanf("%d",&n);
@@ -36,12 +38,13 @@ printf("enter the number\n");
      {
          power=power*r;
      }
-     
+
      sum=sum+power;
      n=n/10;
  }
 
   if(sum==temp)
+ if(sum==temp)
   {
       printf("armstrong number\n");
   }
@@ -49,6 +52,7 @@ printf("enter the number\n");
   {
       printf("not armstrong number\n");
   }
+
 
 
     return 0;

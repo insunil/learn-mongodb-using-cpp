@@ -1,2 +1,2 @@
-*.out 
-env.cpp
+*.out
+.env

@@ -1,4 +1,7 @@
 {
   "files.autoSave": "onFocusChange",
-  "editor.defaultFormatter": "ms-vscode.cpptools"
+  "editor.defaultFormatter": "ms-vscode.cpptools",
+  "cSpell.words": [
+    "mydb"
+  ]
 }
