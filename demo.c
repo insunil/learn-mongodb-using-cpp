@@ -43,14 +43,14 @@ printf("enter the number\n");
      n=n/10;
  }
 
-  
+
  if(sum==temp)
   {
       printf("armstrong number\n");
   }
   else
   {
-      printf("not armstrong number\n");
+      printf("not armstrong number \n");
   }
 
 
