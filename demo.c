@@ -18,7 +18,7 @@ printf("enter the number\n");
  scanf("%d",&n);
  temp=n;
 
- //count the number of digits
+ //count the number   of digits
  while(n)
  {
 
